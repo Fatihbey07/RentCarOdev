@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <table class="table table-hover mt-3">
+        <thead>
+          <th>Araba Adı</th>
+          <th>Vites Türü</th>
+          <th>Araba Kategorisi</th>
+          <th>Arabanın Modeli</th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let araba of arabalar">
+            <td>{{ araba.arabaadi }}</td>
+            <td>{{ araba.vites }}</td>
+            <td>{{ araba.arabakategorisi }}</td>
+            <td>{{ araba.arabamodel }}</td>
+            <td>
+              <button class="btn btn-info" (click)="Goruntule(araba, modal)">
+                Aracı Görüntüle
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="modal" tabindex="-1" #modal>
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">{{ modalBaslik }}</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img class="img-fluid" src="{{ imgUrl }}" />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Kapat
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

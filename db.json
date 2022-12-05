@@ -1,0 +1,114 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "adi": "Benzinli"
+    },
+    {
+      "id": 2,
+      "adi": "Dizel"
+    },
+    {
+      "id": 3,
+      "adi": "LPG"
+    },
+    {
+      "id": 4,
+      "adi": "Elektrikli"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "adsoyad": "Fatih İsmailoğlu",
+      "mail": "fatihas0747@gmail.com",
+      "admin": "1",
+      "parola": "199558",
+      "kiraladi": "0"
+    },
+    {
+      "id": 2,
+      "adsoyad": "Ali Bey",
+      "mail": "ali@mail.com",
+      "admin": "1",
+      "parola": "123"
+    },
+    {
+      "id": 3,
+      "adsoyad": "Berk Koca",
+      "mail": "berk@mail.com",
+      "admin": 0,
+      "parola": "123",
+      "kaytarih": null,
+      "duztarih": null
+    }
+  ],
+  "cars": [
+    {
+      "id": 1,
+      "arabaadi": "AUDİ A6",
+      "arabakategorisi": "Dizel",
+      "kiralik": "Kiralandı",
+      "vites": "Otomatik",
+      "iadetarih": "",
+      "kirtarih": "",
+      "imgUrl": "/assets/audia6.jpg",
+      "arabamodel": 2022
+    },
+    {
+      "id": 2,
+      "arabaadi": "BMV X5",
+      "arabakategorisi": "Benzinli",
+      "kiralik": "Kiralanmadı",
+      "vites": "Yarı Otomatik",
+      "iadetarih": "",
+      "kirtarih": "",
+      "imgUrl": "/assets/bmv-x5.jpeg",
+      "arabamodel": 2022
+    },
+    {
+      "id": 3,
+      "arabaadi": "Mercedes C180 AMG",
+      "arabakategorisi": "LPG",
+      "kiralik": "Kiralanmadı",
+      "vites": "Manuel",
+      "iadetarih": "",
+      "kirtarih": "",
+      "imgUrl": "/assets/mercedesc180.jpg",
+      "arabamodel": 2022
+    },
+    {
+      "id": 4,
+      "arabaadi": "Honda Civic",
+      "arabakategorisi": "Benzinli",
+      "kiralik": "Kiralanmadı",
+      "vites": "Otomatik",
+      "iadetarih": "",
+      "kirtarih": "",
+      "imgUrl": "/assets/hondacivic.jpg",
+      "arabamodel": 2022
+    },
+    {
+      "id": 5,
+      "arabaadi": "Honda CRV",
+      "arabakategorisi": "LPG",
+      "kiralik": "Kiralanmadı",
+      "vites": "Otomatik",
+      "iadetarih": null,
+      "kirtarih": null,
+      "imgUrl": "assets/hondacrv.jpg",
+      "arabamodel": 2022
+    },
+    {
+      "id": 6,
+      "arabaadi": "Renault Clio",
+      "arabakategorisi": "Benzinli",
+      "kiralik": "Kiralanmadı",
+      "vites": "Manuel",
+      "iadetarih": null,
+      "kirtarih": null,
+      "imgUrl": "assets/renaultclio.jpg",
+      "arabamodel": 2022
+    }
+  ]
+}
