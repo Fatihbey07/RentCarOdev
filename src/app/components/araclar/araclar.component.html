@@ -14,6 +14,7 @@
           <th>Araba Adı</th>
           <th>Vites Türü</th>
           <th>Kiralık</th>
+          <th>Kiralık Ücreti(Günlük)</th>
           <th>Araba Modeli</th>
           <th>Araba Kategorisi</th>
           <th>Kiralanma Tarihi</th>
@@ -29,6 +30,7 @@
             <td>{{ araba.arabaadi }}</td>
             <td>{{ araba.vites }}</td>
             <td>{{ araba.kiralik }}</td>
+            <td>{{ araba.kirucret }} TL</td>
             <td>{{ araba.arabamodel }}</td>
             <td>{{ araba.arabakategorisi }}</td>
             <td>{{ araba.kirtarih | date : "dd.MM.yyyy HH:mm:ss" }}</td>
@@ -93,6 +95,12 @@
               <option value="Kiralandı">Kiralandı</option>
               <option value="Kiralanmadı">Kiralanmadı</option>
             </select>
+            <label for="">Kiralama Ücreti (Günlük)</label>
+            <input
+              type="number"
+              class="form-control"
+              formControlName="kirucret"
+            />
             <label>Araba Kategorisi</label>
             <select
               required

@@ -34,6 +34,7 @@ export class AraclarComponent implements OnInit {
     kirtarih: new FormControl(),
     imgUrl: new FormControl(),
     arabamodel: new FormControl(),
+    kirucret: new FormControl(),
   });
   constructor(
     public servis: DataService,

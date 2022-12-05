@@ -15,12 +15,15 @@ import * as bootstrap from 'bootstrap';
 export class HomeComponent implements OnInit {
   arabalar!: Araba[];
   secAraba!: Araba;
-  arabaId: number = 0;
   modal!: Modal;
   imgUrl!: string;
-  modalBaslik: string = '';
-  sonuc: Sonuc = new Sonuc();
-
+  modalBaslik!: string;
+  arabaadi!: string;
+  arabamodel!: string;
+  vites!: string;
+  yakit!: string;
+  kirucret!: number;
+  kiralanmadurumu!: string;
   constructor(
     public servis: DataService,
     public route: ActivatedRoute,
@@ -39,6 +42,12 @@ export class HomeComponent implements OnInit {
   Goruntule(araba: Araba, el: HTMLElement) {
     this.modalBaslik = araba.arabaadi + ' ' + araba.arabamodel;
     this.imgUrl = araba.imgUrl;
+    this.arabaadi = araba.arabaadi;
+    this.arabamodel = araba.arabamodel;
+    this.vites = araba.vites;
+    this.yakit = araba.arabakategorisi;
+    this.kirucret = araba.kirucret;
+    this.kiralanmadurumu = araba.kiralik;
     this.modal = new bootstrap.Modal(el);
     this.modal.show();
   }
